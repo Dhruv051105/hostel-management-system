@@ -1,13 +1,17 @@
+
 {
   "name": "server",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Hostel Management System backend",
+  "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node --env-file=.env server.js",
+    "dev": "nodemon --exec \"node --env-file=.env\" server.js",
+    "test:server": "node --env-file=.env.test server.js",
+    "test:server:dev": "nodemon --exec \"node --env-file=.env.test\" server.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Dhruv",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
